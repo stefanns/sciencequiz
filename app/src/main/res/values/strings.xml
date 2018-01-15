@@ -1,0 +1,70 @@
+<resources>
+    <!-- General messages -->
+    <string name="app_name">ScienceQuiz</string>
+    <string name="title">Science Quizz</string>
+    <string name="title_hint">Please, enter your name here!</string>
+    <string name="name_button">Submit</string>
+    <!-- Toast messages -->
+    <string name="low"> %1$s, is not enough!\nYou got %2$d out of 10.  </string>
+    <string name="medium">%1$s, it\'s good but you can do better!\nYou got %2$d out of 10.</string>
+    <string name="high">Congratulations, %1$s! \nYou got %2$d out of 10. </string>
+    <string name="enterName">Enter your name to complete the quiz!</string>
+
+    <!-- Question 1 -->
+    <string name="question1">1. Who created the famous equation\nE = mc<sup>2</sup>?</string>
+    <string name="question1ans1">Thomas Edison</string>
+    <string name="question1ans2">Albert Einstein</string>
+    <string name="question1ans3">Nikola Tesla</string>
+    <string name="question1ans4">Leonardo da Vinci</string>
+    <!-- Question 2 -->
+    <string name="question2">2. Which gases cause acid rain?</string>
+    <string name="question2ans1">Ozone</string>
+    <string name="question2ans2">Sulphur dioxide</string><!-- Correct -->
+    <string name="question2ans3">Propane</string>
+    <string name="question2ans4">Nitrogen oxides</string><!-- Correct -->
+    <!-- Question 3 -->
+    <string name="question3">3. Who was the first person to land on the Moon?</string>
+    <string name="question3_hint">Enter your answer here</string>
+    <string name="question3_answer">Neil Armstrong</string>
+    <!-- Question 4 -->
+    <string name="question4">4. Which device is used to convert solar energy into electricity?</string>
+    <string name="question4ans1">Danial cell</string>
+    <string name="question4ans2">Photovoltaic cell</string><!-- Correct -->
+    <string name="question4ans3">Electrochemical cell</string>
+    <string name="question4ans4">Vectorscope</string>
+    <!-- Question 5 -->
+    <string name="question5">5. Water boils at 100 \u00B0C ?</string>
+    <string name="question5ans1">True</string><!-- Correct -->
+    <string name="question5ans2">False</string>
+    <!-- Question 6 -->
+    <string name="question6">6. The unit of noise pollution is?</string>
+    <string name="question6_hint">Enter your answer here</string>
+    <string name="question6_answer">Decibel</string>
+    <!-- Question 7 -->
+    <string name="question7">7. A light year is a unit for?</string>
+    <string name="question7ans1">Distance</string><!-- Correct -->
+    <string name="question7ans2">Speed</string>
+    <string name="question7ans3">Intensity of light</string>
+    <string name="question7ans4">None of the above</string>
+    <!-- Question 8 -->
+    <string name="question8">8. Good conductor of electricity is?</string>
+    <string name="question8ans1">Kerosene</string>
+    <string name="question8ans2">Paper</string><!-- Correct -->
+    <string name="question8ans3">Dry air</string>
+    <string name="question8ans4">Graphite</string>
+    <!-- Question 9 -->
+    <string name="question9">9. Heavy water is used in nuclear reactor as?</string>
+    <string name="question9ans1">Coolant</string>
+    <string name="question9ans2">Moderator</string><!-- Correct -->
+    <string name="question9ans3">Fuel</string>
+    <string name="question9ans4">Atomic smasher</string>
+    <!-- Question 10 -->
+    <string name="question10">10. Which elements can be magnetised?</string>
+    <string name="question10ans1">Cobalt</string><!-- Correct -->
+    <string name="question10ans2">Silver</string>
+    <string name="question10ans3">Iron</string><!-- Correct -->
+    <string name="question10ans4">Nickel</string>
+    <string name="answers_button">answers</string>
+    <string name="check_button">Check</string>
+    <string name="reset_button">RESET</string><!-- Correct -->
+</resources>
