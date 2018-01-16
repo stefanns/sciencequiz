@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Hide keyboard
+        //Hide keyboard when the program starts
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         //Initialize Radio buttons, Check boxes and Edit text
         userName = findViewById(R.id.name_field);
@@ -161,16 +161,23 @@ public class MainActivity extends AppCompatActivity {
         return scoreAfter;
     }
 
+    //method used to scroll to top
+    public void scrollTop() {
+        scrollView.setFocusableInTouchMode(true);
+        scrollView.smoothScrollTo(0, 0);
+    }
+
+
     public void showAnswers(View view) {
         //mark correct answers
         question1Correct.setTextColor(getResources().getColor(R.color.correct));
         question2Correct1.setTextColor(getResources().getColor(R.color.correct));
         question2Correct2.setTextColor(getResources().getColor(R.color.correct));
-        question3.setText(R.string.question3_answer);
+        question3.setHint(R.string.question3_answer);
         question3.setTextColor(getResources().getColor(R.color.correct));
         question4Correct.setTextColor(getResources().getColor(R.color.correct));
         question5Correct.setTextColor(getResources().getColor(R.color.correct));
-        question6.setText(R.string.question6_answer);
+        question6.setHint(R.string.question6_answer);
         question6.setTextColor(getResources().getColor(R.color.correct));
         question7Correct.setTextColor(getResources().getColor(R.color.correct));
         question8Correct.setTextColor(getResources().getColor(R.color.correct));
@@ -178,12 +185,12 @@ public class MainActivity extends AppCompatActivity {
         question10Correct1.setTextColor(getResources().getColor(R.color.correct));
         question10Correct2.setTextColor(getResources().getColor(R.color.correct));
         question10Correct3.setTextColor(getResources().getColor(R.color.correct));
-        //scroll to top
-        scrollView.smoothScrollTo(0, 0);
+        scrollTop();
     }
 
     public void reset(View view) {
         //reset colors if showAnswers method was called
+
         question1Correct.setTextColor(getResources().getColor(R.color.textColor));
         question2Correct1.setTextColor(getResources().getColor(R.color.textColor));
         question2Correct2.setTextColor(getResources().getColor(R.color.textColor));
@@ -205,9 +212,11 @@ public class MainActivity extends AppCompatActivity {
         group8.clearCheck();
         group9.clearCheck();
         //reset texts
-        question3.setText(null);
-        question6.setText(null);
-        userName.setText(null);
+        question3.getText().clear();
+        question3.setHint(R.string.question3_hint);
+        question6.getText().clear();
+        question6.setHint(R.string.question6_hint);
+        userName.getText().clear();
         //reset check boxes
         question1Correct.setChecked(false);
         question2Correct1.setChecked(false);
@@ -218,10 +227,7 @@ public class MainActivity extends AppCompatActivity {
         question10Correct2.setChecked(false);
         question10Correct3.setChecked(false);
         question10Incorrect.setChecked(false);
-        //scroll to top
-        scrollView.smoothScrollTo(0, 0);
-
-
+        scrollTop();
     }
 
     //method used to display the score
