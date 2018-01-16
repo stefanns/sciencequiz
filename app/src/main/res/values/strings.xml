@@ -2,7 +2,7 @@
     <!-- General messages -->
     <string name="app_name">ScienceQuiz</string>
     <string name="title">Science Quizz</string>
-    <string name="title_hint">Please, enter your name here!</string>
+    <string name="title_hint">Enter your name here!</string>
     <string name="name_button">Submit</string>
     <!-- Toast messages -->
     <string name="low"> %1$s, is not enough!\nYou got %2$d out of 10.  </string>
@@ -59,11 +59,12 @@
     <string name="question9ans3">Fuel</string>
     <string name="question9ans4">Atomic smasher</string>
     <!-- Question 10 -->
-    <string name="question10">10. Which elements can be magnetised?</string>
+    <string name="question10">10. Which of the following  elements can be magnetised?</string>
     <string name="question10ans1">Cobalt</string><!-- Correct -->
     <string name="question10ans2">Silver</string>
     <string name="question10ans3">Iron</string><!-- Correct -->
     <string name="question10ans4">Nickel</string>
+    <!-- Button messages -->
     <string name="answers_button">answers</string>
     <string name="check_button">Check</string>
     <string name="reset_button">RESET</string><!-- Correct -->
