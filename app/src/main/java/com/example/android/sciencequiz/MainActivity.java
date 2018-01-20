@@ -2,6 +2,7 @@ package com.example.android.sciencequiz;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox question10Correct1, question10Correct2, question10Correct3, question10Incorrect;
     RadioGroup group1, group4, group5, group7, group8, group9;
     ScrollView scrollView;
+    String name;
 
     // hide keyboard when click outside
     @Override
@@ -77,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         group8 = findViewById(R.id.group8);
         group9 = findViewById(R.id.group9);
         scrollView = findViewById(R.id.scrollView);
+
     }
 
 
@@ -232,26 +235,24 @@ public class MainActivity extends AppCompatActivity {
 
     //method used to display the score
     public String createMessage() {
-        String name = userName.getText().toString();
         String message = "";
         Resources res = getResources();
-        if (name.equals(""))
-            message = res.getString(R.string.enterName);
-        else {
-            if (calculateScore() < 5) {
-                message = res.getString(R.string.low, name, calculateScore());
-            }
-            if (calculateScore() <= 7 && calculateScore() >= 5) {
-                message = res.getString(R.string.medium, name, calculateScore());
-            }
-            if (calculateScore() > 7) {
-                message = res.getString(R.string.high, name, calculateScore());
-            }
+
+        if (calculateScore() < 5) {
+            message = res.getString(R.string.low, name, calculateScore());
         }
+        if (calculateScore() <= 7 && calculateScore() >= 5) {
+            message = res.getString(R.string.medium, name, calculateScore());
+        }
+        if (calculateScore() > 7) {
+            message = res.getString(R.string.high, name, calculateScore());
+        }
+
         return message;
     }
 
     //  custom toast
+
     public void createCustomToast(String message)
 
     {
@@ -267,9 +268,23 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
+    //send information to display screen
+    public void sendMessage(String message, int score) {
+        Intent intent = new Intent(this, display_activity.class);
+        intent.putExtra("displayMessage", message);
+        intent.putExtra("score", score);
+        startActivity(intent);
+
+    }
+
     //method used to display the toast with the score
     public void submit(View view) {
-        createCustomToast(createMessage());
+        Resources res = getResources();
+        name = userName.getText().toString();
+        if (name.equals(""))
+            createCustomToast(res.getString(R.string.enterName));
+        else
+            sendMessage(createMessage(), calculateScore());
     }
 
 }

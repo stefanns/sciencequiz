@@ -5,4 +5,5 @@
     <dimen name="below_image">20dp</dimen>
     <dimen name="edit_text">10dp</dimen>
     <dimen name="question_answers">10dp</dimen>
+    <dimen name="checkbox_margin">20dp</dimen>
 </resources>

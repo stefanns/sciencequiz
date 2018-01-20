@@ -1,14 +1,18 @@
 <resources>
     <!-- General messages -->
     <string name="app_name">ScienceQuiz</string>
-    <string name="title">Science Quizz</string>
+    <string name="title">Science Quiz</string>
     <string name="title_hint">Enter your name here!</string>
     <string name="name_button">Submit</string>
-    <!-- Toast messages -->
+    <string name="results">Results</string>
+    <!-- Display messages -->
     <string name="low"> %1$s, is not enough!\nYou got %2$d out of 10.  </string>
     <string name="medium">%1$s, it\'s good but you can do better!\nYou got %2$d out of 10.</string>
     <string name="high">Congratulations, %1$s! \nYou got %2$d out of 10. </string>
     <string name="enterName">Enter your name to complete the quiz!</string>
+    <string name="finalMessage1">My score of the science quiz was %1$d out of 10.</string>
+    <string name="finalMessage2">\nGo to the <a href="https://play.google.com/store">Play Store</a>,
+        download the app and check yours!</string>
 
     <!-- Question 1 -->
     <string name="question1">1. Who created the famous equation\nE = mc<sup>2</sup>?</string>
@@ -63,9 +67,10 @@
     <string name="question10ans1">Cobalt</string><!-- Correct -->
     <string name="question10ans2">Silver</string>
     <string name="question10ans3">Iron</string><!-- Correct -->
-    <string name="question10ans4">Nickel</string>
+    <string name="question10ans4">Nickel</string><!-- Correct -->
     <!-- Button messages -->
     <string name="answers_button">answers</string>
     <string name="check_button">Check</string>
-    <string name="reset_button">RESET</string><!-- Correct -->
+    <string name="reset_button">RESET</string>
+    <string name="share">Share</string>
 </resources>
