@@ -5,6 +5,7 @@
     <string name="title_hint">Enter your name here!</string>
     <string name="name_button">Submit</string>
     <string name="results">Results</string>
+    <string name="shareVia">Share Via</string>
     <!-- Display messages -->
     <string name="low"> %1$s, is not enough!\nYou got %2$d out of 10.  </string>
     <string name="medium">%1$s, it\'s good but you can do better!\nYou got %2$d out of 10.</string>

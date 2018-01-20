@@ -54,6 +54,6 @@ public class display_activity extends AppCompatActivity {
         sharingIntent.setType("text/plain");
         String shareBody = res.getString(R.string.finalMessage1, score) + res.getString(R.string.finalMessage2);
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-        startActivity(Intent.createChooser(sharingIntent, "Share via"));
+        startActivity(Intent.createChooser(sharingIntent,  res.getString(R.string.shareVia)));
     }
 }
