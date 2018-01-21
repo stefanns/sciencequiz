@@ -20,7 +20,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -40,19 +40,13 @@
 
 
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:padding="@dimen/below_image"
-                    android:scaleType="centerInside"
+                    style="@style/titleImage"
                     android:src="@drawable/brain" />
 
                 <EditText
 
                     android:id="@+id/name_field"
                     style="@style/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/title_hint" />
 
 
@@ -67,7 +61,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -85,8 +79,6 @@
                 <TextView
                     android:id="@+id/question1"
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question1" />
 
                 <RadioGroup
@@ -98,29 +90,21 @@
                     <RadioButton
                         android:id="@+id/question1ans1"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question1ans1" />
 
                     <RadioButton
                         android:id="@+id/question1ans2"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question1ans2" />
 
                     <RadioButton
                         android:id="@+id/question1ans3"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question1ans3" />
 
                     <RadioButton
                         android:id="@+id/question1ans4"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question1ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -134,7 +118,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -150,39 +134,28 @@
                     android:src="@drawable/acid_rain" />
 
                 <TextView
-
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question2" />
 
 
                 <CheckBox
                     android:id="@+id/question2ans1"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question2ans1" />
 
                 <CheckBox
                     android:id="@+id/question2ans2"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question2ans2" />
 
                 <CheckBox
                     android:id="@+id/question2ans3"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question2ans3" />
 
                 <CheckBox
                     android:id="@+id/question2ans4"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question2ans4" />
             </LinearLayout>
 
@@ -197,7 +170,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -214,16 +187,12 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question3" />
 
                 <EditText
 
                     android:id="@+id/question3_field"
                     style="@style/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/question3_hint" />
 
 
@@ -238,7 +207,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -255,8 +224,6 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question4" />
 
                 <RadioGroup
@@ -268,29 +235,21 @@
                     <RadioButton
                         android:id="@+id/question4ans1"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question4ans1" />
 
                     <RadioButton
                         android:id="@+id/question4ans2"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question4ans2" />
 
                     <RadioButton
                         android:id="@+id/question4ans3"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question4ans3" />
 
                     <RadioButton
                         android:id="@+id/question4ans4"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question4ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -304,7 +263,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -320,8 +279,6 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question5" />
 
                 <RadioGroup
@@ -358,7 +315,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -374,16 +331,12 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question6" />
 
                 <EditText
 
                     android:id="@+id/question6_field"
                     style="@style/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:hint="@string/question6_hint" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -397,7 +350,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -414,8 +367,6 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question7" />
 
                 <RadioGroup
@@ -427,29 +378,21 @@
                     <RadioButton
                         android:id="@+id/question7ans1"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question7ans1" />
 
                     <RadioButton
                         android:id="@+id/question7ans2"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question7ans2" />
 
                     <RadioButton
                         android:id="@+id/question7ans3"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question7ans3" />
 
                     <RadioButton
                         android:id="@+id/question7ans4"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question7ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -463,7 +406,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -480,8 +423,6 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question8" />
 
                 <RadioGroup
@@ -493,29 +434,21 @@
                     <RadioButton
                         android:id="@+id/question8ans1"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question8ans1" />
 
                     <RadioButton
                         android:id="@+id/question8ans2"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question8ans2" />
 
                     <RadioButton
                         android:id="@+id/question8ans3"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question8ans3" />
 
                     <RadioButton
                         android:id="@+id/question8ans4"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question8ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -529,7 +462,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -546,8 +479,6 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question9" />
 
                 <RadioGroup
@@ -559,29 +490,21 @@
                     <RadioButton
                         android:id="@+id/question9ans1"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question9ans1" />
 
                     <RadioButton
                         android:id="@+id/question9ans2"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question9ans2" />
 
                     <RadioButton
                         android:id="@+id/question9ans3"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question9ans3" />
 
                     <RadioButton
                         android:id="@+id/question9ans4"
                         style="@style/answers"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:text="@string/question9ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -595,7 +518,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/outside_box"
             card_view:cardBackgroundColor="@color/colorCard"
-            card_view:cardCornerRadius="10dp"
+            card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -612,37 +535,27 @@
 
                 <TextView
                     style="@style/questions"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question10" />
 
 
                 <CheckBox
                     android:id="@+id/question10ans1"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question10ans1" />
 
                 <CheckBox
                     android:id="@+id/question10ans2"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question10ans2" />
 
                 <CheckBox
                     android:id="@+id/question10ans3"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question10ans3" />
 
                 <CheckBox
                     android:id="@+id/question10ans4"
                     style="@style/checkbox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/question10ans4" />
 
             </LinearLayout>
@@ -652,7 +565,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tenth_question"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/outside_box"
             android:orientation="horizontal">
 
             <Button

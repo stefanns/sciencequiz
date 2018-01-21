@@ -14,8 +14,11 @@
         <item name="android:fontFamily">@font/rubik_regular</item>
         <item name="android:textColor">#000000</item>
     </style>
-
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     <style name="questions">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">@dimen/question_answers</item>
         <item name="android:layout_marginLeft">@dimen/question_answers</item>
         <item name="android:layout_marginRight">@dimen/question_answers</item>
@@ -25,6 +28,8 @@
     </style>
 
     <style name="checkbox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">@dimen/question_answers</item>
         <item name="android:paddingLeft">@dimen/question_answers</item>
         <item name="android:layout_marginLeft">@dimen/question_answers</item>
@@ -35,6 +40,8 @@
     </style>
 
     <style name="answers">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingTop">@dimen/question_answers</item>
         <item name="android:paddingLeft">@dimen/question_answers</item>
         <item name="android:textSize">18sp</item>
@@ -49,8 +56,17 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:scaleType">centerInside</item>
     </style>
+    <style name="titleImage">
+        <item name="android:padding">@dimen/below_image</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
 
     <style name="editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:backgroundTint">#0d47a1</item>
         <item name="android:inputType">textCapSentences</item>
         <item name="android:paddingLeft">@dimen/edit_text</item>

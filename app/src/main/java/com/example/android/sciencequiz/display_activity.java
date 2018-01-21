@@ -34,7 +34,7 @@ public class display_activity extends AppCompatActivity {
         });
         setImage();
     }
-
+// display an image
     public void setImage() {
 
         if (score < 5) {
@@ -47,7 +47,7 @@ public class display_activity extends AppCompatActivity {
             result_image.setImageResource(R.drawable.like);
         }
     }
-
+// share
     public void shareIt() {
         Resources res = getResources();
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
