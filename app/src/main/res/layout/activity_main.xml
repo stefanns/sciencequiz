@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
@@ -41,13 +40,16 @@
 
                 <ImageView
                     style="@style/titleImage"
+                    android:contentDescription="@string/brain"
                     android:src="@drawable/brain" />
 
                 <EditText
 
                     android:id="@+id/name_field"
                     style="@style/editText"
-                    android:hint="@string/title_hint" />
+                    android:gravity="center"
+                    android:hint="@string/title_hint"
+                    android:textSize="18sp" />
 
 
             </LinearLayout>
@@ -64,47 +66,42 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
-
+            <LinearLayout style="@style/linearLayout">
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/equations"
                     android:src="@drawable/emc2" />
 
                 <TextView
-                    android:id="@+id/question1"
+                    android:id="@+id/text_question1"
                     style="@style/questions"
                     android:text="@string/question1" />
 
                 <RadioGroup
-                    android:id="@+id/group1"
+                    android:id="@+id/rb_group1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question1ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question1ans1"
+                        style="@style/radio_button"
                         android:text="@string/question1ans1" />
 
                     <RadioButton
-                        android:id="@+id/question1ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question1ans2"
+                        style="@style/radio_button"
                         android:text="@string/question1ans2" />
 
                     <RadioButton
-                        android:id="@+id/question1ans3"
-                        style="@style/answers"
+                        android:id="@+id/rb_question1ans3"
+                        style="@style/radio_button"
                         android:text="@string/question1ans3" />
 
                     <RadioButton
-                        android:id="@+id/question1ans4"
-                        style="@style/answers"
+                        android:id="@+id/rb_question1ans4"
+                        style="@style/radio_button"
                         android:text="@string/question1ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -121,16 +118,12 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/acid_rain"
                     android:src="@drawable/acid_rain" />
 
                 <TextView
@@ -139,22 +132,22 @@
 
 
                 <CheckBox
-                    android:id="@+id/question2ans1"
+                    android:id="@+id/cb_question2ans1"
                     style="@style/checkbox"
                     android:text="@string/question2ans1" />
 
                 <CheckBox
-                    android:id="@+id/question2ans2"
+                    android:id="@+id/cb_question2ans2"
                     style="@style/checkbox"
                     android:text="@string/question2ans2" />
 
                 <CheckBox
-                    android:id="@+id/question2ans3"
+                    android:id="@+id/cb_question2ans3"
                     style="@style/checkbox"
                     android:text="@string/question2ans3" />
 
                 <CheckBox
-                    android:id="@+id/question2ans4"
+                    android:id="@+id/cb_question2ans4"
                     style="@style/checkbox"
                     android:text="@string/question2ans4" />
             </LinearLayout>
@@ -173,16 +166,12 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/astronaut"
                     android:src="@drawable/astronaut" />
 
                 <TextView
@@ -191,7 +180,7 @@
 
                 <EditText
 
-                    android:id="@+id/question3_field"
+                    android:id="@+id/et_question3"
                     style="@style/editText"
                     android:hint="@string/question3_hint" />
 
@@ -210,16 +199,11 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
-
+            <LinearLayout style="@style/linearLayout">
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/sun"
                     android:src="@drawable/sun" />
 
                 <TextView
@@ -227,29 +211,29 @@
                     android:text="@string/question4" />
 
                 <RadioGroup
-                    android:id="@+id/group4"
+                    android:id="@+id/rb_group4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question4ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question4ans1"
+                        style="@style/radio_button"
                         android:text="@string/question4ans1" />
 
                     <RadioButton
-                        android:id="@+id/question4ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question4ans2"
+                        style="@style/radio_button"
                         android:text="@string/question4ans2" />
 
                     <RadioButton
-                        android:id="@+id/question4ans3"
-                        style="@style/answers"
+                        android:id="@+id/rb_question4ans3"
+                        style="@style/radio_button"
                         android:text="@string/question4ans3" />
 
                     <RadioButton
-                        android:id="@+id/question4ans4"
-                        style="@style/answers"
+                        android:id="@+id/rb_question4ans4"
+                        style="@style/radio_button"
                         android:text="@string/question4ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -266,15 +250,11 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/water_boiling"
                     android:src="@drawable/boiling_water" />
 
                 <TextView
@@ -282,23 +262,23 @@
                     android:text="@string/question5" />
 
                 <RadioGroup
-                    android:id="@+id/group5"
+                    android:id="@+id/rb_group5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question5ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question5ans1"
+                        style="@style/radio_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/question5ans1" />
 
                     <RadioButton
-                        android:id="@+id/question5ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question5ans2"
+                        style="@style/radio_button"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -318,15 +298,11 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/sound_speaker"
                     android:src="@drawable/sound" />
 
                 <TextView
@@ -335,7 +311,7 @@
 
                 <EditText
 
-                    android:id="@+id/question6_field"
+                    android:id="@+id/et_question6"
                     style="@style/editText"
                     android:hint="@string/question6_hint" />
             </LinearLayout>
@@ -353,16 +329,12 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/planet"
                     android:src="@drawable/planet" />
 
                 <TextView
@@ -370,29 +342,29 @@
                     android:text="@string/question7" />
 
                 <RadioGroup
-                    android:id="@+id/group7"
+                    android:id="@+id/rb_group7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question7ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question7ans1"
+                        style="@style/radio_button"
                         android:text="@string/question7ans1" />
 
                     <RadioButton
-                        android:id="@+id/question7ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question7ans2"
+                        style="@style/radio_button"
                         android:text="@string/question7ans2" />
 
                     <RadioButton
-                        android:id="@+id/question7ans3"
-                        style="@style/answers"
+                        android:id="@+id/rb_question7ans3"
+                        style="@style/radio_button"
                         android:text="@string/question7ans3" />
 
                     <RadioButton
-                        android:id="@+id/question7ans4"
-                        style="@style/answers"
+                        android:id="@+id/rb_question7ans4"
+                        style="@style/radio_button"
                         android:text="@string/question7ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -409,16 +381,12 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/electricity"
                     android:src="@drawable/electricity" />
 
                 <TextView
@@ -426,29 +394,29 @@
                     android:text="@string/question8" />
 
                 <RadioGroup
-                    android:id="@+id/group8"
+                    android:id="@+id/rb_group8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question8ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question8ans1"
+                        style="@style/radio_button"
                         android:text="@string/question8ans1" />
 
                     <RadioButton
-                        android:id="@+id/question8ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question8ans2"
+                        style="@style/radio_button"
                         android:text="@string/question8ans2" />
 
                     <RadioButton
-                        android:id="@+id/question8ans3"
-                        style="@style/answers"
+                        android:id="@+id/rb_question8ans3"
+                        style="@style/radio_button"
                         android:text="@string/question8ans3" />
 
                     <RadioButton
-                        android:id="@+id/question8ans4"
-                        style="@style/answers"
+                        android:id="@+id/rb_question8ans4"
+                        style="@style/radio_button"
                         android:text="@string/question8ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -465,16 +433,12 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
+            <LinearLayout style="@style/linearLayout">
 
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/nuclear_reactor"
                     android:src="@drawable/nuclear_reactor" />
 
                 <TextView
@@ -482,29 +446,29 @@
                     android:text="@string/question9" />
 
                 <RadioGroup
-                    android:id="@+id/group9"
+                    android:id="@+id/rb_group9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/outside_box">
 
                     <RadioButton
-                        android:id="@+id/question9ans1"
-                        style="@style/answers"
+                        android:id="@+id/rb_question9ans1"
+                        style="@style/radio_button"
                         android:text="@string/question9ans1" />
 
                     <RadioButton
-                        android:id="@+id/question9ans2"
-                        style="@style/answers"
+                        android:id="@+id/rb_question9ans2"
+                        style="@style/radio_button"
                         android:text="@string/question9ans2" />
 
                     <RadioButton
-                        android:id="@+id/question9ans3"
-                        style="@style/answers"
+                        android:id="@+id/rb_question9ans3"
+                        style="@style/radio_button"
                         android:text="@string/question9ans3" />
 
                     <RadioButton
-                        android:id="@+id/question9ans4"
-                        style="@style/answers"
+                        android:id="@+id/rb_question9ans4"
+                        style="@style/radio_button"
                         android:text="@string/question9ans4" />
                 </RadioGroup>
             </LinearLayout>
@@ -521,16 +485,11 @@
             card_view:cardCornerRadius="@dimen/radius"
             card_view:cardUseCompatPadding="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/outside_box"
-                android:paddingTop="@dimen/outside_box">
-
+            <LinearLayout style="@style/linearLayout">
 
                 <ImageView
                     style="@style/image"
+                    android:contentDescription="@string/magnet"
                     android:src="@drawable/magnet" />
 
                 <TextView
@@ -539,22 +498,22 @@
 
 
                 <CheckBox
-                    android:id="@+id/question10ans1"
+                    android:id="@+id/cb_question10ans1"
                     style="@style/checkbox"
                     android:text="@string/question10ans1" />
 
                 <CheckBox
-                    android:id="@+id/question10ans2"
+                    android:id="@+id/cb_question10ans2"
                     style="@style/checkbox"
                     android:text="@string/question10ans2" />
 
                 <CheckBox
-                    android:id="@+id/question10ans3"
+                    android:id="@+id/cb_question10ans3"
                     style="@style/checkbox"
                     android:text="@string/question10ans3" />
 
                 <CheckBox
-                    android:id="@+id/question10ans4"
+                    android:id="@+id/cb_question10ans4"
                     style="@style/checkbox"
                     android:text="@string/question10ans4" />
 
@@ -569,31 +528,34 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/show_answers"
+                android:id="@+id/button_answers"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="showAnswers"
                 android:text="@string/answers_button"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textSize="14sp" />
 
             <Button
-                android:id="@+id/final_submission"
+                android:id="@+id/button_submission"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="submit"
                 android:text="@string/check_button"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textSize="14sp" />
 
             <Button
-                android:id="@+id/reset"
+                android:id="@+id/button_reset"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="reset"
                 android:text="@string/reset_button"
-                android:textAllCaps="true" />
+                android:textAllCaps="true"
+                android:textSize="14sp" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

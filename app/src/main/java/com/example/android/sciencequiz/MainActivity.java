@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     String name;
 
     // hide keyboard when click outside
+
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (getCurrentFocus() != null) {
@@ -55,31 +56,36 @@ public class MainActivity extends AppCompatActivity {
         //Hide keyboard when the program starts
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         //Initialize Radio buttons, Check boxes and Edit text
-        userName = findViewById(R.id.name_field);
-        question1Correct = findViewById(R.id.question1ans2);
-        question2Correct1 = findViewById(R.id.question2ans2);
-        question2Incorrect = findViewById(R.id.question2ans1);
-        question2Incorrect2 = findViewById(R.id.question2ans3);
-        question2Correct2 = findViewById(R.id.question2ans4);
-        question3 = findViewById(R.id.question3_field);
-        question4Correct = findViewById(R.id.question4ans2);
-        question5Correct = findViewById(R.id.question5ans1);
-        question6 = findViewById(R.id.question6_field);
-        question7Correct = findViewById(R.id.question7ans1);
-        question8Correct = findViewById(R.id.question8ans4);
-        question9Correct = findViewById(R.id.question9ans2);
-        question10Correct1 = findViewById(R.id.question10ans1);
-        question10Correct2 = findViewById(R.id.question10ans3);
-        question10Correct3 = findViewById(R.id.question10ans4);
-        question10Incorrect = findViewById(R.id.question10ans2);
-        group1 = findViewById(R.id.group1);
-        group4 = findViewById(R.id.group4);
-        group5 = findViewById(R.id.group5);
-        group7 = findViewById(R.id.group7);
-        group8 = findViewById(R.id.group8);
-        group9 = findViewById(R.id.group9);
-        scrollView = findViewById(R.id.scrollView);
+        initialize();
 
+    }
+
+    //Initialize Radio buttons, Check boxes and Edit text
+    public void initialize() {
+        userName = findViewById(R.id.name_field);
+        question1Correct = findViewById(R.id.rb_question1ans1);
+        question2Correct1 = findViewById(R.id.cb_question2ans2);
+        question2Incorrect = findViewById(R.id.cb_question2ans1);
+        question2Incorrect2 = findViewById(R.id.cb_question2ans3);
+        question2Correct2 = findViewById(R.id.cb_question2ans4);
+        question3 = findViewById(R.id.et_question3);
+        question4Correct = findViewById(R.id.rb_question4ans2);
+        question5Correct = findViewById(R.id.rb_question5ans1);
+        question6 = findViewById(R.id.et_question6);
+        question7Correct = findViewById(R.id.rb_question7ans1);
+        question8Correct = findViewById(R.id.rb_question8ans4);
+        question9Correct = findViewById(R.id.rb_question9ans2);
+        question10Correct1 = findViewById(R.id.cb_question10ans1);
+        question10Correct2 = findViewById(R.id.cb_question10ans3);
+        question10Correct3 = findViewById(R.id.cb_question10ans4);
+        question10Incorrect = findViewById(R.id.cb_question10ans2);
+        group1 = findViewById(R.id.rb_group1);
+        group4 = findViewById(R.id.rb_group4);
+        group5 = findViewById(R.id.rb_group5);
+        group7 = findViewById(R.id.rb_group7);
+        group8 = findViewById(R.id.rb_group8);
+        group9 = findViewById(R.id.rb_group9);
+        scrollView = findViewById(R.id.scrollView);
     }
 
 
@@ -103,8 +109,8 @@ public class MainActivity extends AppCompatActivity {
             scoreAfter = scoreBefore;
         }
         scoreBefore = scoreAfter;
-        //check question 3
-        if (question3ans.equals("Neil Armstrong") || question3ans.equals("NEIL ARMSTRONG")) {
+        //check question 3 without being case sensitive
+        if (question3ans.equalsIgnoreCase(getResources().getString(R.string.question3_answer))) {
             scoreAfter += 1;
         } else {
             scoreAfter = scoreBefore;
@@ -124,9 +130,8 @@ public class MainActivity extends AppCompatActivity {
             scoreAfter = scoreBefore;
         }
         scoreBefore = scoreAfter;
-        //check question 6
-        if (question6ans.equals("Db") || question6ans.equals("Decibel")
-                || question3ans.equals("DECIBEL")) {
+        //check question 6, same as question 3
+        if (question6ans.equalsIgnoreCase(getResources().getString(R.string.question6_answer))) {
             scoreAfter += 1;
         } else {
             scoreAfter = scoreBefore;
@@ -170,9 +175,8 @@ public class MainActivity extends AppCompatActivity {
         scrollView.smoothScrollTo(0, 0);
     }
 
-
+    //mark correct answers
     public void showAnswers(View view) {
-        //mark correct answers
         question1Correct.setTextColor(getResources().getColor(R.color.correct));
         question2Correct1.setTextColor(getResources().getColor(R.color.correct));
         question2Correct2.setTextColor(getResources().getColor(R.color.correct));
@@ -191,9 +195,8 @@ public class MainActivity extends AppCompatActivity {
         scrollTop();
     }
 
+    //reset colors if showAnswers method was called
     public void reset(View view) {
-        //reset colors if showAnswers method was called
-
         question1Correct.setTextColor(getResources().getColor(R.color.textColor));
         question2Correct1.setTextColor(getResources().getColor(R.color.textColor));
         question2Correct2.setTextColor(getResources().getColor(R.color.textColor));
@@ -251,8 +254,7 @@ public class MainActivity extends AppCompatActivity {
         return message;
     }
 
-    //  custom toast
-
+    // create custom toast
     public void createCustomToast(String message)
 
     {

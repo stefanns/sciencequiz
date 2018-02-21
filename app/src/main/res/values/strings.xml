@@ -2,7 +2,7 @@
     <!-- General messages -->
     <string name="app_name">ScienceQuiz</string>
     <string name="title">Science Quiz</string>
-    <string name="title_hint">Enter your name here!</string>
+    <string name="title_hint"><font size="16">Enter your name here!</font></string>
     <string name="name_button">Submit</string>
     <string name="results">Results</string>
     <string name="shareVia">Share Via</string>
@@ -16,7 +16,7 @@
         download the app and check yours!</string>
 
     <!-- Question 1 -->
-    <string name="question1">1. Who created the famous equation\nE = mc<sup>2</sup>?</string>
+    <string name="question1">1. Who created the famous equation E = mc<sup>2</sup>?</string>
     <string name="question1ans1">Thomas Edison</string>
     <string name="question1ans2">Albert Einstein</string>
     <string name="question1ans3">Nikola Tesla</string>
@@ -29,8 +29,8 @@
     <string name="question2ans4">Nitrogen oxides</string><!-- Correct -->
     <!-- Question 3 -->
     <string name="question3">3. Who was the first person to land on the Moon?</string>
-    <string name="question3_hint">Enter your answer here</string>
-    <string name="question3_answer">Neil Armstrong</string>
+    <string name="question3_hint"><font size="16">Enter your answer here</font></string>
+    <string name="question3_answer"><font size="16">Neil Armstrong</font></string>
     <!-- Question 4 -->
     <string name="question4">4. Which device is used to convert solar energy into electricity?</string>
     <string name="question4ans1">Danial cell</string>
@@ -43,8 +43,8 @@
     <string name="question5ans2">False</string>
     <!-- Question 6 -->
     <string name="question6">6. The unit of noise pollution is?</string>
-    <string name="question6_hint">Enter your answer here</string>
-    <string name="question6_answer">Decibel</string>
+    <string name="question6_hint"><font size="16">Enter your answer here</font></string>
+    <string name="question6_answer"><font size="16">Decibel</font></string>
     <!-- Question 7 -->
     <string name="question7">7. A light year is a unit for?</string>
     <string name="question7ans1">Distance</string><!-- Correct -->
@@ -74,4 +74,17 @@
     <string name="check_button">Check</string>
     <string name="reset_button">RESET</string>
     <string name="share">Share</string>
+    <!-- Content descriptions -->
+    <string name="equations">einstein equation</string>
+    <string name="brain">start_brain</string>
+    <string name="acid_rain">acid rain</string>
+    <string name="astronaut">astronaut</string>
+    <string name="sun">sun</string>
+    <string name="water_boiling">water boiling</string>
+    <string name="sound_speaker">sound speaker</string>
+    <string name="planet">planet</string>
+    <string name="electricity">electricity</string>
+    <string name="nuclear_reactor">nuclear reactor</string>
+    <string name="magnet">magnet</string>
+
 </resources>
